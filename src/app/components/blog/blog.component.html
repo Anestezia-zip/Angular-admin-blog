@@ -1,0 +1,24 @@
+
+<ul class="nav nav-pills">
+	<li class="nav-item">
+	  <a class="nav-link">Blog</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" aria-current="page" [routerLink]="[ '/admin/blog' ]" routerLinkActive="active">Admin</a>
+	</li>
+</ul>
+
+<div class="cards">
+	<div class="card" style="width: 18rem;" *ngFor="let blog of userBlogs; index as i">
+		<img src="{{ blog.imagePath }}" height="50%" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <p> {{ blog.postedBy }} </p>
+		  <h5 class="card-title"> {{ blog.topic }} </h5>
+		  <p class="card-text"> {{ blog.message }} </p>
+		</div>
+		<div class="card-footer">
+			<a class="btn btn-secondary" [routerLink]="[ '/blog', blog.id ]">Details</a>
+		</div>
+	</div>
+</div>
+

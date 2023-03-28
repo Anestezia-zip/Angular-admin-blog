@@ -1,0 +1,11 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "imagePath": "https://scientific-publishing.webshop.elsevier.com/wp-content/uploads/2021/09/2021-01-1.jpg",
+      "postedBy": "admin",
+      "topic": "First post",
+      "message": "Sign up to create your account and start to use Angular blog"
+    }
+  ]
+}

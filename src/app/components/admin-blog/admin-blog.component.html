@@ -1,0 +1,39 @@
+
+<ul class="nav nav-pills">
+	<li class="nav-item">
+	  <a class="nav-link" [routerLink]="[ '/blog' ]" routerLinkActive="active">Blog</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" aria-current="page">Admin</a>
+	</li>
+</ul>
+
+<div class="container">
+	<p class="blogs">Blogs</p>
+	<div class="inputs-wrapper">
+		<input type="text" placeholder="title here.." [(ngModel)]="topic">
+		<textarea name="" id="" rows="4" placeholder="text here.." [(ngModel)]="message"></textarea>
+		<input type="text" placeholder="author here.." [(ngModel)]="postedBy">
+		<button type="button" (click)="addBlog()" *ngIf="!editStatus" >Add</button>
+		<button type="button" (click)="saveBlog()" *ngIf="editStatus" >Save</button>
+		<hr>
+		<table>
+			<tr>
+				<th><b>#</b></th>
+				<th><b>Title</b></th>
+				<th><b>Text</b></th>
+				<th><b>Author</b></th>
+				<th><b>Edit</b></th>
+				<th><b>Delete</b></th>
+			</tr>
+			<tr *ngFor="let blog of blogs; index as i">
+				<th><b> {{ blog.id }} </b></th>
+				<th> {{ blog.topic }} </th>
+				<th> {{ blog.message }} </th>
+				<th> {{ blog.postedBy }} </th>
+				<th><button (click)="editBlog(i)">Edit</button></th>
+				<th><button (click)="deleteBlog(i)">Delete</button></th>
+			</tr>
+		</table>
+	</div>
+</div>

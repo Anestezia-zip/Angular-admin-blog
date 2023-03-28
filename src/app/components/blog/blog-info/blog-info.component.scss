@@ -1,0 +1,80 @@
+
+.nav {
+	background-color: #595b6a;
+	padding: 8px;
+}
+
+.nav-link {
+	color: #fff;
+	padding: 10px 10px;
+}
+
+.nav-link.active {
+	background-color: #777988;
+	padding: 10px 10px;
+}
+
+.container {
+	margin: 10px 0;
+	display: flex;
+}
+
+.blogs {
+	width: 200px;
+	height: 45px;
+	margin: 0 20px 0 10px;
+	padding: 10px;
+	background-color: #595b6a;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.inputs-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-left: 30px;
+}
+
+input,
+textarea {
+	width: 1000px;
+	border-radius: 5px;
+	border: 2px solid rgb(191, 189, 204);
+	padding: 8px 10px;
+}
+
+.inputs-wrapper button {
+	width: 60px;
+	height: 35px;
+	border-radius: 5px;
+	border: 2px solid #595b6a;
+	background-color: #595b6a;
+	color: #fff;
+}
+
+table {
+	border-top: 1px solid #595b6a;
+	border-bottom: 1px solid #595b6a;
+}
+th {
+	padding: 8px;
+
+}
+
+.cards {
+	display: flex;
+	gap: 15px;
+	margin: 10px;
+}
+
+.card {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body {
+	flex-grow: 1;
+}

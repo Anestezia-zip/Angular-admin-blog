@@ -1,0 +1,21 @@
+
+
+<ul class="nav nav-pills">
+	<li class="nav-item">
+	  <a class="nav-link" [routerLink]="[ '/blog' ]" routerLinkActive="active">Blog</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" [routerLink]="[ '/admin/blog' ]" routerLinkActive="active">Admin</a>
+	</li>
+</ul>
+
+<div class="cards">
+	<div class="card" style="width: 18rem;">
+		<img [src]="blog?.imagePath" height="50%" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <p class="card-text"> {{ blog?.message }} </p>
+		</div>
+	</div>
+</div>
+
+<p>blog-info works!</p>
