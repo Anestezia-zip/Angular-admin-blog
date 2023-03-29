@@ -9,13 +9,15 @@
 	</li>
 </ul>
 
-<div class="cards">
-	<div class="card" style="width: 18rem;">
-		<img [src]="blog?.imagePath" height="50%" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <p class="card-text"> {{ blog?.message }} </p>
+<ng-container *ngIf="blog">
+	<div class="cards">
+		<div class="card" style="width: 18rem;">
+			<img [src]="blog.imagePath" height="50%" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text"> {{ blog.message }} </p>
+			</div>
 		</div>
 	</div>
-</div>
+</ng-container>
 
 <p>blog-info works!</p>
